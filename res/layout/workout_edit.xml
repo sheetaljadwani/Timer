@@ -1,0 +1,176 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/nameText"
+        android:layout_width="wrap_content"
+        android:layout_height="70px"
+        android:text="@string/workoutName" >
+    </TextView>
+
+    <EditText
+        android:id="@+id/workoutName"
+        android:layout_width="300px"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/nameText"
+        android:inputType="text"
+        android:text="Workout" />
+
+    <TextView
+        android:id="@+id/warmuphrText"
+        android:layout_width="wrap_content"
+        android:layout_height="70px"
+        android:layout_below="@id/nameText"
+        android:text="@string/warmuphr" >
+    </TextView>
+    
+    <TimePicker 
+        android:id= "@+id/warmupTimePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/workoutName"
+        android:layout_toRightOf="@id/warmuphrText"
+        
+        />
+
+    <EditText
+        android:id="@+id/warmuphr"
+        android:layout_width="50px"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/workoutName"
+        android:layout_toRightOf="@id/warmuphrText"
+        android:inputType="number"
+        android:text="0" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/warmupmin"
+        android:layout_width="50px"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/workoutName"
+        android:layout_toRightOf="@id/warmuphr"
+        android:ems="10"
+        android:inputType="number"
+        android:text="0" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/warmupsec"
+        android:layout_width="50px"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/workoutName"
+        android:layout_toRightOf="@id/warmupmin"
+        android:ems="10"
+        android:inputType="number"
+        android:text="0" />
+
+    <TextView
+        android:id="@+id/highhrText"
+        android:layout_width="wrap_content"
+        android:layout_height="70px"
+        android:layout_below="@id/warmuphrText"
+        android:text="@string/highIntervalhr" >
+    </TextView>
+
+    <EditText
+        android:id="@+id/highIntervalhr"
+        android:layout_width="50px"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/warmuphr"
+        android:layout_toRightOf="@id/highhrText"
+        android:ems="10"
+        android:inputType="number"
+        android:text="0" />
+
+    <EditText
+        android:id="@+id/highIntervalmin"
+        android:layout_width="50px"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/warmupmin"
+        android:layout_toRightOf="@id/highIntervalhr"
+        android:inputType="number"
+        android:text="0" />
+    <EditText
+        android:id="@+id/highIntervalsec"
+        android:layout_width="50px"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/warmupsec"
+        android:layout_toRightOf="@+id/highIntervalmin"
+        android:ems="10"
+        android:inputType="number"
+        android:text="0" >
+
+        
+    </EditText>
+
+    <TextView
+        android:id="@+id/lowhrText"
+        android:layout_width="wrap_content"
+        android:layout_height="70px"
+        android:layout_below="@id/highhrText"
+        android:text="@string/lowIntervalhr" >
+    </TextView>
+	<EditText
+        android:id="@+id/lowIntervalhr"
+        android:layout_width="50px"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/lowhrText"
+        android:layout_below="@id/highIntervalhr"
+        android:ems="10"
+        android:inputType="number"
+        android:text="0" >
+
+        <requestFocus />
+    </EditText>
+    
+    <EditText
+        android:id="@+id/lowIntervalmin"
+        android:layout_width="50px"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/highIntervalmin"
+        android:layout_toRightOf="@id/lowIntervalhr"
+        android:inputType="number"
+        android:text="0" />
+
+    <EditText
+        android:id="@+id/lowIntervalsec"
+        android:layout_width="50px"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/lowIntervalmin"
+        android:layout_below="@id/highIntervalsec"
+        android:inputType="number"
+        android:text="0"  />
+
+    <TextView
+        android:id="@+id/cycleText"
+        android:layout_width="wrap_content"
+        android:layout_height="70px"
+        android:layout_below="@id/lowhrText"
+        android:text="@string/cycle" >
+    </TextView>
+
+    <Button
+        android:id="@+id/newBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cycleText"
+        android:text="@string/newWorkout" />
+    
+       
+
+    
+
+    <EditText
+        android:id="@+id/cycles"
+        android:layout_width="50px"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/cycleText"
+        android:layout_alignBottom="@+id/cycleText"
+        android:layout_toLeftOf="@+id/lowIntervalmin"
+        android:ems="10"
+        android:inputType="number"
+        android:text="0" />
+    
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView 
+	    android:id="@+id/workoutName"
+	    android:layout_width="fill_parent"
+	    android:layout_height="100dp"
+	    android:gravity="center" />
+    
+	<TextView 
+	    android:id="@+id/workoutPhase"
+	    android:text="Warm-Up"
+	    android:layout_width="fill_parent"
+	    android:layout_height="100dp"
+	    android:gravity="center" />
+	
+	<TextView 
+	    android:id="@+id/workoutTimer"
+	    android:text="20"
+	    android:layout_width="fill_parent"
+	    android:layout_height="100dp"
+	    android:gravity="center" />
+	
+	<RelativeLayout  
+	    android:layout_width="match_parent"
+    	android:layout_height="100dp"
+    	android:layout_gravity="center"
+    	
+	    >
+
+	    <Button
+	        android:id="@+id/resetBtn"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_alignParentTop="true"
+	        android:layout_marginRight="55dp"
+	        android:enabled="false"
+	        android:text="Reset" />
+
+	    <Button
+	        android:id="@+id/pauseBtn"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:layout_marginRight="48dp"
+	        android:layout_toLeftOf="@id/resetBtn"
+	        android:text="Pause"
+	        android:visibility="invisible" />
+
+	    <Button
+	        android:id="@+id/startBtn"
+	        android:layout_width="100dp"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:layout_alignRight="@id/pauseBtn"
+	        android:text="Start" />
+	    
+	    
+	    
+	</RelativeLayout>
+</LinearLayout>
